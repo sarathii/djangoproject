@@ -24,7 +24,10 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('product/',include('product.urls')),
+path('product/',include('product.urls')),
+    path('login/',include('product.urls')),
+    path('home/',include('product.urls')),
+
 
 #"""wheneverr product page is requested it refers urls.py where we are asking to refer to music.urls page in music app..."""
 

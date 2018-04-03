@@ -1,0 +1,9 @@
+{%if ha%}
+    <ul>
+        {% for i in ha%}
+        <li><a href="/product/{{i.id}}/">{{i.iname}}</a></li>
+    {% endfor%}
+    </ul>
+{%else %}
+<h3> no items available right now</h3>
+{%endif%}
